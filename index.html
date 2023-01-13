@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form with CSS flexbox</title>
+    <script src="https://kit.fontawesome.com/6e1983410e.js" crossorigin="anonymous"></script>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        nav>span a {
+            text-decoration: none;
+            color: black;
+            margin-right: 3ex;
+        }
+
+        nav>span a:hover {
+            color: rgb(28, 3, 218);
+            padding: 0.50em;
+            background-image: linear-gradient(tomato, rgba(171, 171, 215, 0.107), gray);
+        }
+
+        .login_container {
+            border: 3px solid red;
+            padding-bottom: 3px;
+            background-image: linear-gradient(white, rgba(207, 193, 99, 0.859), skyblue);
+        }
+
+        h1 {
+            text-align: center;
+            font-style: oblique;
+        }
+
+        .login_form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .login_form input {
+            width: 40%;
+            height: 3ex;
+        }
+
+        #btn_submit {
+            width: 6em;
+            height: 2em;
+        }
+
+        .login_form input[type="submit"] {
+            background-color: goldenrod;
+            border: 0;
+            border-radius: 4px;
+            color: whitesmoke;
+            font: 1em sans-serif;
+        }
+
+        .login_form input[type="submit"]:hover {
+            color: greenyellow;
+            font-variant: small-caps;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span>
+                <a href="#">Home</a>
+                <a href="#">Dashboard</a>
+                <a href="#">Inventory</a>
+                <a href="#">Publication</a>
+            </span>
+            <span>
+                <a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+            </span>
+        </nav>
+    </header>
+    <section class="login_container">
+        <h1>Please Login</h1>
+        <form class="login_form">
+            <input type="email" name="" id="" placeholder="Your email address">
+            <input type="password" name="" id="" placeholder="Password">
+            <input id="btn_submit" type="submit" value="Login">
+        </form>
+    </section>
+</body>
+
+</html>
